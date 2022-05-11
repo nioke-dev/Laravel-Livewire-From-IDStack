@@ -1,4 +1,9 @@
 <div>
+
+    <livewire:contact-create />
+
+    <hr>
+
     <table class="table table-striped">
         <thead class="table-dark">
             <tr>
@@ -11,11 +16,11 @@
         <tbody>
             @php
                 $no = 0;
-            @endphp       
-            @foreach ($contacts as $contact)
-            @php
-                $no++;
             @endphp
+            @foreach ($contacts as $contact)
+                @php
+                    $no++;
+                @endphp
                 <tr>
                     <th scope="row">{{ $no }}</th>
                     <td>{{ $contact->name }}</td>
