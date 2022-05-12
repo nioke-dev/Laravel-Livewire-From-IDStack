@@ -1,5 +1,6 @@
 <div>
-    <form wire:submit.prevent='store'>
+    <form wire:submit.prevent='update'>
+        <input type="hidden" name="" wire:model="contactId">
         <div class="form-group">
             <div class="row">
                 <div class="col-6">
